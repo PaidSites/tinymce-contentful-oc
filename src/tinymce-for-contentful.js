@@ -27,6 +27,11 @@ window.contentfulExtension.init(function(api) {
       autoresize_bottom_margin: 15,
       resize: false,
       image_caption: true,
+      formats: {
+        alignleft: { selector: 'img', classes: 'alignleft' },
+        aligncenter: { selector: 'img', classes: 'aligncenter' },
+        alignright: { selector: 'img', classes: 'alignright' },
+      },
       init_instance_callback : function(editor) {
         var listening = true;
 
